@@ -1,1 +1,1 @@
-git status -s --ignored | grep '??' | sed 's/?? //'
+ git ls-files --exclude-standard --others --ignored
