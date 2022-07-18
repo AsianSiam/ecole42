@@ -9,9 +9,6 @@
 /*   Updated: 2022/07/18 15:59:44 by mbabel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
-
 void	ft_ultimate_div_mod(int *a, int *b)
 {
 	int	div;
@@ -23,10 +20,6 @@ void	ft_ultimate_div_mod(int *a, int *b)
 		mod = *a % *b;
 		*a = div;
 		*b = mod;
-	}
-	else
-	{
-		printf("ne peut pas etre div par 0\n");
 	}
 }
 /*
