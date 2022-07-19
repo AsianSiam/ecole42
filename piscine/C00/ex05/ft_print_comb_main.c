@@ -2,7 +2,7 @@
 
 void    ft_print_comb(void);
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     ft_print_comb();
     return 0;
