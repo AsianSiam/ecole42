@@ -19,7 +19,9 @@ char ft_putchar_is_printable(char c) //permet de savoir si le (char c) caractere
 void ft_putstr_non_printable(char *str) //permet d'afficher les chaines de caracteres, les non-imprimables sous forme hexadécimale (minuscules) 
 {
     unsigned int    i;
+    char    hex[17];
 
+    hex = "0123456789abcdef";
     i = 0;    
     while (str[i] != '\0')
     {
@@ -30,8 +32,8 @@ void ft_putstr_non_printable(char *str) //permet d'afficher les chaines de carac
         else //si str[i] n'est pas un caractere imprimable
         {
             ft_putchar('\\'); //affiche un "\"
-            ft_putchar("0123456789abcdef"[str[i] / 16]); //affiche le premier caractere en hexadecimal
-            ft_putchar("0123456789abcdef"[str[i] % 16]);//affiche le second 
+            ft_putchar(hex[str[i] / 16]); //affiche le premier caractere en hexadecimal
+            ft_putchar(hex[str[i] % 16]);//affiche le second 
         }
         i++;        
     }     

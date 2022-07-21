@@ -7,10 +7,10 @@ int ft_strlen(char *str) //compte le nombre de caractere dans la chaine str[i]
     {
         i++;
     }
-    return(i);    //renvoie le nombre de caractere de la chaine str[i]
+    return(i);    //renvoie le nombre de caractere de la chaine str[i] ->valeur de i
 }
 
-unsigned int ft_strlcpy(char *dest, char *src, unsigned int size)
+unsigned int ft_strlcpy(char *dest, char *src, unsigned int size) //copie une chaine de caractere et renvois le nombre de caracteres copiés
 {
     unsigned int    i;
     unsigned int    x;

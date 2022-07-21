@@ -3,7 +3,7 @@
 
 char *ft_strupcase(char *str);
 
-int main(int argc, char const *argv[])
+int main(void)
 {
     char str[] = "Salut12";
     printf("%s", ft_strupcase(str));
